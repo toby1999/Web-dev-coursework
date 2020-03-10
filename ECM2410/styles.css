@@ -1,0 +1,86 @@
+.mainContainer  {
+  width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+h1 {
+    color: #383838;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    font-size: 24pt;
+}
+
+a /* Links in the table */{
+  text-decoration: none;
+  color: black;
+  font-size: 12pt;
+  font-family: Helvetica, sans-serif;
+}
+
+
+table {
+  width: 100%;
+  background-color: #fcfcfc;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  font-family: Helvetica, sans-serif;
+  padding: 10px;
+  width: auto;
+
+
+}
+td {
+  border: 1px solid #ddd;
+
+}
+
+th /* Table header */ {
+  background-color: #383838;
+  color: white;
+
+}
+tr td:nth-child(3), tr td:nth-child(4) {
+  text-align: right; /* right-justify stock and price columns */
+}
+
+th:nth-child(1) {
+  border-top-left-radius: 15px;
+}
+
+th:nth-child(4) {
+  border-top-right-radius: 15px;
+}
+
+tr:hover  /* Row hover colour */ {
+  background-color: #f5f5f5;
+}
+
+a.logoff /* Logoff button */ {
+  text-decoration: none;
+  color: #383838;
+  font-size: 16px;
+  float: right;
+  margin-right: 0px;
+
+
+}
+
+a.logoff:hover {
+  color: #7a7a7a;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .mainContainer {
+        width: auto;
+    }
+}
